@@ -1,5 +1,4 @@
 
-  // Your web app's Firebase configuration
   var firebaseConfig = {
     apiKey: "AIzaSyCo8HJ00OidtCm5kfDHrBJyDZtXNYR2LUc",
     authDomain: "rely-fbd57.firebaseapp.com",
@@ -17,4 +16,5 @@
 
 
 var database = firebase.database();
+
 

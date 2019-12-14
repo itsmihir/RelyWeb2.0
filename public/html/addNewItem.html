@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rely</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <image src="../../icon.png" width="3%" height="4%" style="margin-right: 1%;">
+            <a class="navbar-brand" href="/public/html/index.html">Rely</a>
+        </image>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/users.html">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/dailycheckin.html">Daily check</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/sales.html">Sales</a>
+                </li>
+                <li class="tag-line" style="padding-left:800px ;">
+                    <p class="font-italic" style="color:rgb(245, 133, 92); margin-top: 5px;">
+                        We will there for you..
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <form  id="inputForm">
+        <div class="form-group">
+            <label for="id">Product Id:</label>
+            <input type="id" class="form-control" id="pid" placeholder="Enter a Unique ID" name="id"required >
+        </div>
+        <div class="form-group">
+            <label for="Product Name">Product Name</label>
+            <input type="name" class="form-control" id="pname" placeholder="Enter Product Name" name="pname"required >
+        </div>
+        <div class="form-group">
+            <label for="Image">Image URL:</label>
+            <input type="url" class="form-control" id="purl" placeholder="Enter a Image URL of the Product " name="purl">
+        </div>
+        <div class="form-group">
+            <label for="Thumbnail Image">Thumbnail Image:</label>
+            <input type="url" class="form-control" id="purl2" placeholder="Enter Thumbnail Image URL" name="purl2"required >
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" class="form-control" id="description" placeholder="Enter Description of the Product" name="pdescription"required >
+        </div>
+       
+        <div class="form-group">
+            <label for="Price">Price:</label>
+            <input type="number" class="form-control" id="pprice" placeholder="Enter Price of the Product" name="pprice" required>
+        </div>
+        <div class="form-group">
+            <label for="Stock">Present Stock:</label>
+            <input type="number" class="form-control" id="pstock" placeholder="Enter Present Stock of the Product" name="pstock"required >
+        </div>
+
+        <div class="form-group">
+            <label for="Tags">Packaging Type:</label>
+            <input type="text" class="form-control" id="pptype" placeholder="Enter Packaging Type for the Product" name="pptype" required>
+        </div>
+
+        <div class="form-group">
+            <label for="Tags">Tags:</label>
+            <input type="text" class="form-control" id="ptags" placeholder="Enter Tags for the Product" name="ptag" required>
+        </div>
+
+        <button id="saveNewData" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+   https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
+
+    <script src="../js/addNewItem.js"></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

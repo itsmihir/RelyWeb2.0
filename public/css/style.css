@@ -17,6 +17,18 @@ div.stocks h1{
 }
 
 div.left_stock{
+    box-shadow:-10px 4px rgb(202, 81, 81);
     background-color: red;
     width: 20%;
+}
+
+div.addItem button {
+    color: black;
+    box-shadow: 2px -2px rgb(104, 236, 104);
+}
+
+form#inputForm{
+
+    margin: 10%;
+    background-origin: padding-box;;
 }
