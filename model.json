@@ -1,0 +1,81 @@
+{
+    "OnlineStatus" : {
+      "<UID>" : {
+        "Online" : "<0,1>",
+        "OnlineTimeStamp" : "<TimeStamp>"
+      }
+    },
+    "Orders" : {
+      "<UID>" : {
+        "<OrderID>" : {
+          "Cart" : {
+            "ProductID" : {
+              "ProductDiscount" : "<Discount>",
+              "ProductTotal" : "<Total>",
+              "Quantity" : "<Quantity>"
+            }
+          },
+          "DeliveryStatus" : "<DeliveryStatus>",
+          "EstimatedTime" : "<EstimatedTimeStamp>",
+          "OrderAddress" : "<Address>",
+          "OrderDiscount" : "<OrderDiscount>",
+          "OrderTotalBasic" : "<Total>",
+          "OrderTotalFinal" : "<OrderTotalFinal>",
+          "PaymentMode" : "<PaymentMode>"
+        }
+      }
+    },
+    "Users" : {
+      "<UID>" : {
+        "Address" : "<Address>",
+        "DeviceToken" : "<DeviceToken>",
+        "Email" : "<Email>",
+        "Phone" : "<Phone>",
+        "ProfilePicture" : "<URL>",
+        "ThumbnailImage" : "<URL>",
+        "Username" : "<Username>"
+      }
+    },
+    "products" : {
+      "00000001" : {
+        "Description" : "<Product Description>",
+        "Image" : "<URL>",
+        "PackagingType" : "<PackagingType>",
+        "Price" : "<Price",
+        "ProductName" : "<ProductName",
+        "Stock" : "<Stock>",
+        "Tags" : "<Tags>",
+        "ThumbnailImage" : "<URL>"
+      },
+      "00000002" : {
+        "Description" : "<Product Description>",
+        "Image" : "<URL>",
+        "PackagingType" : "<PackagingType>",
+        "Price" : "<Price",
+        "ProductName" : "<ProductName",
+        "Stock" : "<Stock>",
+        "Tags" : "<Tags>",
+        "ThumbnailImage" : "<URL>"
+      },
+      "00000003" : {
+        "Description" : "<Product Description>",
+        "Image" : "<URL>",
+        "PackagingType" : "<PackagingType>",
+        "Price" : "<Price",
+        "ProductName" : "<ProductName",
+        "Stock" : "<Stock>",
+        "Tags" : "<Tags>",
+        "ThumbnailImage" : "<URL>"
+      },
+      "00000004" : {
+        "Description" : "<Product Description>",
+        "Image" : "<URL>",
+        "PackagingType" : "<PackagingType>",
+        "Price" : "<Price",
+        "ProductName" : "<ProductName",
+        "Stock" : "<Stock>",
+        "Tags" : "<Tags>",
+        "ThumbnailImage" : "<URL>"
+      }
+    }
+  }

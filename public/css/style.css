@@ -1,0 +1,22 @@
+#sales{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 30px;
+}
+
+canvas #mychart{
+width: 10px;
+height: 3px;
+}
+
+div.stocks{
+    padding: 5%;
+}
+
+div.stocks h1{
+    font-size: 40px;;
+}
+
+div.left_stock{
+    background-color: red;
+    width: 20%;
+}
