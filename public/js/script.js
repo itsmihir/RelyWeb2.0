@@ -2,8 +2,8 @@ var database = firebase.database();
 
 var ref = database.ref('Products');
 
+document.body.className = "loading";
 ref.on('value', gotData, error);
-
 
 function error(error) {
     console.log(error);
@@ -18,6 +18,9 @@ const xaxis = [],
 var data;
 
 function gotData(data) {
+
+    document.body.className = "loaded";
+    console.log('loaded');
     console.log(data.val());
     data = data.val();
     var keys = Object.keys(data);
@@ -25,11 +28,12 @@ function gotData(data) {
     for (var i = 0; i < keys.length; i++) {
 
 
-        $('#table').append(`<tr>
+        $('#table').append(`
+    <tr>
+    <td> <img class="table" src="${data[keys[i]].Image}" alt="Product Image URL error"></td>
     <td>${data[keys[i]].Id}</td>
     <td>${data[keys[i]].ProductName}</td>
     <td>${data[keys[i]].Description}</td>
-    <td><a href ="${data[keys[i]].Image}">${data[keys[i]].Image}</a></td>
     <td><a href ="${data[keys[i]].ThumbnailImage}">${data[keys[i]].ThumbnailImage}</a></td>
     <td>${data[keys[i]].Tags}</td>
     <td><strong>${data[keys[i]].Stock}</strong></td>
@@ -85,6 +89,5 @@ function gotData(data) {
 
 
 function editData(Id) {
-    console.log(Id);
-    fill(Id);
+    window.document.location = `../html/edit.html?id=${Id}`;
 }

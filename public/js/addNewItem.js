@@ -43,20 +43,3 @@ document.querySelector("#saveNewData").addEventListener("click", () => {
 
     saveData(data);
 });
-
-function fill(id) {
-
-    window.location.href = '../html/addNewItem.html';
-    console.log(data);
-    alert('ads');
-    document.querySelector("#pid").value = data[id].Id;
-    document.querySelector("#pname").value = data[id].ProductName;
-    document.querySelector("#purl").value = data[id].Image;
-    document.querySelector("#purl2").value = data[id].ThumbnailImage;
-    document.querySelector("#description").value = data[id].Description;
-    document.querySelector("#ptags").value = data[id].Tags;
-    document.querySelector("#pstock").value = data[id].Stocks;
-    document.querySelector("#pprice").value = data[id].Price;
-    document.querySelector("#pptype").value = data[id].PackagingType;
-
-}
