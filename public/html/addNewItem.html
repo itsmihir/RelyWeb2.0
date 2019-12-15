@@ -37,14 +37,14 @@
         </div>
     </nav>
 
-    <form  id="inputForm">
+    <form id="inputForm">
         <div class="form-group">
             <label for="id">Product Id:</label>
-            <input type="id" class="form-control" id="pid" placeholder="Enter a Unique ID" name="id"required >
+            <input type="id" class="form-control" id="pid" placeholder="Enter a Unique ID" name="id">
         </div>
         <div class="form-group">
             <label for="Product Name">Product Name</label>
-            <input type="name" class="form-control" id="pname" placeholder="Enter Product Name" name="pname"required >
+            <input type="name" class="form-control" id="pname" placeholder="Enter Product Name" name="pname">
         </div>
         <div class="form-group">
             <label for="Image">Image URL:</label>
@@ -52,41 +52,38 @@
         </div>
         <div class="form-group">
             <label for="Thumbnail Image">Thumbnail Image:</label>
-            <input type="url" class="form-control" id="purl2" placeholder="Enter Thumbnail Image URL" name="purl2"required >
+            <input type="url" class="form-control" id="purl2" placeholder="Enter Thumbnail Image URL" name="purl2">
         </div>
         <div class="form-group">
             <label for="description">Description:</label>
-            <input type="text" class="form-control" id="description" placeholder="Enter Description of the Product" name="pdescription"required >
+            <input type="text" class="form-control" id="description" placeholder="Enter Description of the Product" name="pdescription">
         </div>
-       
+
         <div class="form-group">
             <label for="Price">Price:</label>
-            <input type="number" class="form-control" id="pprice" placeholder="Enter Price of the Product" name="pprice" required>
+            <input type="number" class="form-control" id="pprice" placeholder="Enter Price of the Product" name="pprice">
         </div>
         <div class="form-group">
             <label for="Stock">Present Stock:</label>
-            <input type="number" class="form-control" id="pstock" placeholder="Enter Present Stock of the Product" name="pstock"required >
+            <input type="number" class="form-control" id="pstock" placeholder="Enter Present Stock of the Product" name="pstock">
         </div>
 
         <div class="form-group">
             <label for="Tags">Packaging Type:</label>
-            <input type="text" class="form-control" id="pptype" placeholder="Enter Packaging Type for the Product" name="pptype" required>
+            <input type="text" class="form-control" id="pptype" placeholder="Enter Packaging Type for the Product" name="pptype">
         </div>
 
         <div class="form-group">
             <label for="Tags">Tags:</label>
-            <input type="text" class="form-control" id="ptags" placeholder="Enter Tags for the Product" name="ptag" required>
+            <input type="text" class="form-control" id="ptags" placeholder="Enter Tags for the Product" name="ptag">
         </div>
 
-        <button id="saveNewData" type="submit" class="btn btn-primary">Submit</button>
+        <button id="saveNewData" type="button" class="btn btn-primary">Submit</button>
     </form>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-   https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
-
+    <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js"></script>
+    <script src="../../setup.js"></script>
     <script src="../js/addNewItem.js"></script>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
