@@ -26,7 +26,7 @@ body.loaded .loading-bar {
 
 div#delete {
     padding-top: 20px;
-    padding-left: 1000px;
+    padding-left: 0px;
 }
 
 form#inputForm {

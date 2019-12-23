@@ -1,0 +1,16 @@
+div#mainTable {
+    padding-top: 5px;
+}
+
+div.locate button {
+    margin-left: 1130px;
+}
+
+div.sizedBox {
+    padding-top: 40px;
+    padding-left: 70px;
+}
+
+div#mapid {
+    height: 180px;
+}

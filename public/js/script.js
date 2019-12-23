@@ -30,15 +30,15 @@ function gotData(data) {
 
         $('#table').append(`
     <tr>
-    <td> <img class="table" src="${data[keys[i]].Image}" alt="Product Image URL error"></td>
     <td>${data[keys[i]].Id}</td>
+    <td> <img class="table" src="${data[keys[i]].Image}" alt="Product Image URL error"></td>
     <td>${data[keys[i]].ProductName}</td>
     <td>${data[keys[i]].Description}</td>
     <td><a href ="${data[keys[i]].ThumbnailImage}">${data[keys[i]].ThumbnailImage}</a></td>
     <td>${data[keys[i]].Tags}</td>
     <td><strong>${data[keys[i]].Stock}</strong></td>
     <td><strong>₹${data[keys[i]].Price}</strong></td>
-    <td><button class="btn btn-info" id="${keys[i]}" onclick="editData(this.id)" >Edit</button></td>
+    <td><button class="btn btn-light" id="${keys[i]}" onclick="editData(this.id)" >Edit</button></td>
     </tr>
     `)
 
@@ -91,3 +91,17 @@ function gotData(data) {
 function editData(Id) {
     window.document.location = `../html/edit.html?id=${Id}`;
 }
+
+var tableOffset = $("#table-1").offset().top;
+var $header = $("#table-1 > thead").clone();
+var $fixedHeader = $("#header-fixed").append($header);
+
+$(window).bind("scroll", function() {
+    var offset = $(this).scrollTop();
+
+    if (offset >= tableOffset && $fixedHeader.is(":hidden")) {
+        $fixedHeader.show();
+    } else if (offset < tableOffset) {
+        $fixedHeader.hide();
+    }
+});

@@ -15,13 +15,14 @@
 
 <body>
     <div class="loading-bar"></div>
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <nav class="navbar navbar-expand-sm bg-primary navbar-dark sticky-top">
         <image src="../../asset/icon.png" width="3%" height="4%" style="margin-right: 1%;">
             <a class="navbar-brand" href="#">Rely</a>
         </image>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>
     </button>
+
 
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav">
@@ -42,70 +43,93 @@
             </ul>
         </div>
     </nav>
+    <div class="sizedBox">
+
+        <h3><strong>Stock</strong></h3>
+    </div>
+    <div class="add">
+
+        <a href="addNewItem.html "><button id="addItem" type="button" class="btn btn-primary">Add New Item</button></a>
+    </div>
+
+    <div class="split">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#home">Items</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#stocks">Graph</a>
+            </li>
+
+        </ul>
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane container active" id="home">
+
+            <div class="container" id="mainTable">
+
+                <table class="table" id="table">
+
+                    <thead class="thead-light">
+                        <tr>
+                            <th>Product ID</th>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Description</th>
+                            <th>Thumbnail Image URL</th>
+                            <th>Tags</th>
+                            <th>Stock</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                </table>
+                <table class="table" id="table">
+                    <tbody>
+                        <!-- <tr>
+                            <td>
+                                <img class="table" src="https://www.telegraphindia.com/unsafe/930x523/smart/static.telegraphindia.com/derivative/THE_TELEGRAPH/1690914/16X9/image38feee04-4802-4773-a68d-7d0c75130dd7.jpg " alt=" img "></td>
+                            <td>00000001</td>
+                            <td>Amul Gold</td>
+                            <td>This is a big dis.....</td>
+                            <td><a href="https://www.demo.com "> https://www.demo.com</a></td>
+                            <td>tags1,tag2</td>
+                            <td>100</td>
+                            <td>₹50</td>
+                            <td><button class="btn btn-info ">Edit</button></td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://www.demo.com "> https://www.demo.com</a></td>
+                            <td>00000002</td>
+                            <td>Amul diamond</td>
+                            <td>This is also a very big dis..</td>
+                            <td><a href="https://www.demo.com "> https://www.demo.com</a></td>
+                            <td>tag1,thag2</td>
+                            <td>80</td>
+                            <td>₹300</td>
+                            <td><button class="btn btn-info ">Edit</button></td>
+                        </tr> -->
+
+                    </tbody>
+                </table>
+                <br>
+
+            </div>
 
 
+        </div>
+        <div class="tab-pane container fade" id="stocks">
+            <div id="stockchart">
+                <canvas id="myChart" width="100" height="40"></canvas>
+            </div>
 
-    <div class="container" id="mainTable">
-
-        <table class="table" id="table">
-
-            <thead class="thead-dark">
-                <tr>
-                    <th>Image</th>
-                    <th>Product ID</th>
-                    <th>Product Name</th>
-                    <th>Description</th>
-                    <th>Thumbnail Image URL</th>
-                    <th>Tags</th>
-                    <th>Stock</th>
-                    <th>Price</th>
-                    <th></th>
-                </tr>
-            </thead>
-
-            <tbody>
-                <!-- <tr>
-                    <td>
-                        <img class="table" src="https://www.telegraphindia.com/unsafe/930x523/smart/static.telegraphindia.com/derivative/THE_TELEGRAPH/1690914/16X9/image38feee04-4802-4773-a68d-7d0c75130dd7.jpg " alt=" img "></td>
-                    <td>00000001</td>
-                    <td>Amul Gold</td>
-                    <td>This is a big dis.....</td>
-                    <td><a href="https://www.demo.com "> https://www.demo.com</a></td>
-                    <td>tags1,tag2</td>
-                    <td>100</td>
-                    <td>₹50</td>
-                    <td><button class="btn btn-info ">Edit</button></td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.demo.com "> https://www.demo.com</a></td>
-                    <td>00000002</td>
-                    <td>Amul diamond</td>
-                    <td>This is also a very big dis..</td>
-                    <td><a href="https://www.demo.com "> https://www.demo.com</a></td>
-                    <td>tag1,thag2</td>
-                    <td>80</td>
-                    <td>₹300</td>
-                    <td><button class="btn btn-info ">Edit</button></td>
-                </tr> -->
-
-            </tbody>
-        </table>
-
-        <div class="add ">
-
-            <a href="addNewItem.html "><button id="addItem " type="button " class="btn btn-success ">Add New Item</button></a>
         </div>
 
-    </div>
-    <div id="stockchart">
-        <canvas id="myChart" width="190" height="90"></canvas>
+
     </div>
 
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js "></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
     <script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-database.js "></script>
 
     <script src="../../setup.js "></script>
